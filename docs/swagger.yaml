@@ -1,0 +1,21 @@
+info:
+  contact: {}
+paths:
+  /v1/qrcode/{text}:
+    post:
+      consumes:
+      - application/json
+      description: This API for generating qrcode
+      parameters:
+      - description: Enter info
+        in: path
+        name: text
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: generate qr code
+      tags:
+      - qrcode
+swagger: "2.0"

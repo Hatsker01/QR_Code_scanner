@@ -1,0 +1,33 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/v1/qrcode/{text}": {
+            "post": {
+                "description": "This API for generating qrcode",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "qrcode"
+                ],
+                "summary": "generate qr code",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Enter info",
+                        "name": "text",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {}
+            }
+        }
+    }
+}
